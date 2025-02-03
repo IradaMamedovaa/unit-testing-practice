@@ -38,12 +38,12 @@ it('should yield 0 if an empty array is provided', () => {
 });
 
 it('should throw an error if no value is passed into the function', () => {
-    const expectedResult = () => { add() };
-    expect(expectedResult).toThrow(); // it is also => /is not iterable/
+    const resultFn = () => { add() };
+    expect(resultFn).toThrow(); // it is also => /is not iterable/
 
 });
 
 it('should throw an error if a non-array value is passed into the function', () => {
-    const expectedResult = () => { add(1) };
-    expect(expectedResult).toThrow(/is not iterable/);
+    const resultFn = () => { add(1) };
+    expect(resultFn).toThrow(/is not iterable/);
 }   );
